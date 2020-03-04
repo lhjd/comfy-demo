@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+site = Comfy::Cms::Site.new
+site.label = 'mydemo'
+site.identifier = 'mydemo'
+site.hostname = 'localhost:3000'
+site.save!

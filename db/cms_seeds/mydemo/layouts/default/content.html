@@ -1,0 +1,20 @@
+[attributes]
+---
+label: default
+app_layout: application
+
+[content]
+<h1>{{ cms:text heading}}</h1>
+<p>this is a the default CMS layout</p>
+<hr>
+<p>These are rendered with partials, using cms:partial tags</p>
+<ul>
+	{{ cms:partial "furniture/detail", { item: "sofa", price: "$199"} }}
+  {{ cms:partial "furniture/detail", { item: "table", price: "$299"} }}
+	{{ cms:partial "furniture/detail", { item: "chair", price: "$399"} }}
+</ul>
+
+[js]
+
+
+[css]
